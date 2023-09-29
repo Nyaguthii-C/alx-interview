@@ -27,8 +27,9 @@ def pascal_triangle(n):
 
             for i in range(2, n):
                 """calculate coefficients in  new row based on previous row"""
-                add_row = [1] + [Triangle[-1][j-1] + Triangle[-1][j] /
-                                 for j in range(1, i)] + [1]
+                add_row = [1] + [
+                    Triangle[-1][j-1] + Triangle[-1][j] for j in range(1, i)
+                ] + [1]
                 Triangle.append(add_row)
 
             return Triangle
