@@ -10,12 +10,15 @@ def pascal_triangle(n):
 
     """Return empty list if no number of rows specified"""
     try:
-        n = int(n)
-        if n <= 0:
+        if not isinstance(n, int):
+            raise TypeError("n must be an integer")
+
+
+        if int(n) <= 0:
             return [[]]
     
     #   initial row
-        elif n == 1:
+        elif int(n) == 1:
             return [[1]]
     
     #   Add row with coefficients depending on row number"""
@@ -29,5 +32,7 @@ def pascal_triangle(n):
                 Triangle.append(add_row)
             
             return Triangle
-    except ValueError:
-        print("n must be an integer")
+    # handle instance where n is passed as an non-integer value
+    except TypeError as e:
+        print(e)
+        return [[]]
