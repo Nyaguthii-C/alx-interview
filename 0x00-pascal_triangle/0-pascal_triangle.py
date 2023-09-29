@@ -14,7 +14,7 @@ def pascal_triangle(n):
             raise TypeError("n must be an integer")
 
         if int(n) <= 0:
-            return [[]]
+            return []
 
     #   initial row
         elif int(n) == 1:
