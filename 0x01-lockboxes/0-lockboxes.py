@@ -19,6 +19,8 @@ def canUnlockAll(boxes):
         """Append collected keys from an opened box in  a list"""
         for k in box:
             keys_gotten.append(k)
+            if k < 0:
+                return False
 
     """Check if a box has a matching key in the collected keys"""
     for index, keys in enumerate(boxes):
