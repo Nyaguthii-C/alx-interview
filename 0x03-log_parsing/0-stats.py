@@ -43,10 +43,11 @@ try:
 
 except KeyboardInterrupt:
     # Handle a keyboard interruption (CTRL + C)
+    print(f'File size: {total_size}')
     for code in sorted(status_code_counts):
         print(f'{code}: {status_code_counts[code]}')
-
+    sys.exit(0) 
 # Print the final statistics after reading all lines
-print(f'Total file size: {total_size}')
-for code in sorted(status_code_counts):
-    print(f'{code}: {status_code_counts[code]}')
+#print(f'Total file size: {total_size}')
+#for code in sorted(status_code_counts):
+#    print(f'{code}: {status_code_counts[code]}')
