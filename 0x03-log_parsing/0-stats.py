@@ -5,7 +5,7 @@ from collections import defaultdict
 
 # Regular expression to match the input format
 log_pattern = re.compile(
-           r'^([\d.]+) - \[(.*?)\] "GET /projects/260 HTTP/1\.1" (\d+) (\d+)$'
+    r'^([\d.]+) - \[(.*?)\] "GET /projects/260 HTTP/1\.1" (\d+) (\d+)$'
 )
 
 # Initialize variables to store metrics
