@@ -46,8 +46,3 @@ except KeyboardInterrupt:
     print(f'File size: {total_size}')
     for code in sorted(status_code_counts):
         print(f'{code}: {status_code_counts[code]}')
-    sys.exit(0) 
-# Print the final statistics after reading all lines
-#print(f'Total file size: {total_size}')
-#for code in sorted(status_code_counts):
-#    print(f'{code}: {status_code_counts[code]}')
