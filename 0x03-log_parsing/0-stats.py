@@ -35,7 +35,6 @@ try:
             print(f'File size: {total_size}')
             for code in sorted(status_code_counts):
                 print(f'{code}: {status_code_counts[code]}')
-            print()
 
             # Reset counters
             line_count = 0
