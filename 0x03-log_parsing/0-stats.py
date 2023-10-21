@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""read stdin and compute metrics"""
 import re
 import sys
 from collections import defaultdict
