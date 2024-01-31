@@ -18,12 +18,6 @@ def makeChange(coins, total):
     if total <= 0 or any(i <= 0 for i in coins):
         return 0
 
-    if coins[0] == total:
-        return 1
-
-    if total % coins[0] == 0:
-        chosenCoinCount = total // coins[0]
-        return chosenCoinCount
     for coin in coins:
         while total >= coin:
             chosenCoinCount += 1
