@@ -15,7 +15,7 @@ def makeChange(coins, total):
     chosenCoinCount = 0
     coins.sort(reverse=True)
 
-    if total <= 0 or any(i == 0 for i in coins):
+    if total <= 0 or any(i <= 0 for i in coins):
         return 0
 
     if coins[0] == total:
