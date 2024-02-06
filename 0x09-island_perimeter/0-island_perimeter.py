@@ -26,6 +26,3 @@ def island_perimeter(grid):
                 if i < len(grid) - 1 and grid[i + 1][j] == 1:
                     adjacentIsland += 1
     return 4 * islands - 2 * adjacentIsland
-
-
-
