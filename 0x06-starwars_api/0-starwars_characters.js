@@ -1,5 +1,5 @@
 #!/usr/bin/node
-// using request module to fetch data from an api"""
+// using request module to fetch data from an api
 
 const request = require('request');
 
@@ -24,4 +24,3 @@ request(url, async function (error, response, body) {
     }
   }
 });
-
